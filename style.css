@@ -323,6 +323,44 @@ nav {
     width: 24px;
     height: 2.5px;
     background-color: #fff;
+    margin: 2.5px 0;
+    transition: var(--transition-smooth);
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav {
+        display: none;
+    }
+    nav.active {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .dropdown, .submenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        transform: none;
+    }
+    .dropdown.show, .submenu.show {
+        display: block;
+    }
+}
 /* --- TỰ ĐỘNG HIỆN MENU KHI RÊ CHUỘT TRÊN MÁY TÍNH --- */
 @media (min-width: 993px) {
     .nav-list li.has-dropdown:hover > .dropdown,
