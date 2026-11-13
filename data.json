@@ -1,0 +1,476 @@
+{
+  "menu": [
+    {
+      "title": "BÁO ĐIỆN TỬ",
+      "submenus": [
+        {
+          "title": "BÁO ĐIỆN TỬ 1",
+          "items": [
+            { "name": "BÁO TUỔI TRẺ", "link": "https://tuoitre.vn", "title": "Báo tuổi trẻ" },
+            { "name": "VN EXPRESS.NET", "link": "https://vnexpress.net", "title": "Tin nhanh Việt Nam" },
+            { "name": "24H.COM.VN", "link": "https://www.24h.com.vn", "title": "24h.com.vn" },
+            { "name": "APP.AISTUDIOS.COM", "link": "https://app.aistudios.com/", "title": "taekwondonamviet" },
+            { "name": "BÁO BÌNH DƯƠNG", "link": "http://baobinhduong.vn", "title": "Báo Bình Dương" },
+            { "name": "TIN THỂ THAO", "link": "http://tinthethao.com.vn", "title": "Tin thể thao" },
+            { "name": "THANH NIÊN", "link": "http://thanhnien.com.vn", "title": "Báo Thanh Niên" },
+            { "name": "TIN MỚI", "link": "http://tinmoi.vn", "title": "Báo tin mới" },
+            { "name": "KÊNH 14", "link": "http://kenh14.vn", "title": "Báo kênh 14" },
+            { "name": "BÁO DÂN TRÍ", "link": "http://dantri.com.vn", "title": "Báo dân trí" },
+            { "name": "TIN 247", "link": "http://tin247.com", "title": "Báo tin 247" },
+            { "name": "HƯƠNG LÊ", "link": "https://www.youtube.com/@HuongLe_Official/videos", "title": "Hương Lê" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 2",
+          "items": [
+            { "name": "GIÁO DỤC", "link": "http://giaoduc.net.vn", "title": "Báo giáo dục" },
+            { "name": "VIỆT BÁO", "link": "http://vietbao.vn", "title": "Việt báo" },
+            { "name": "DANH BẠ WEB", "link": "http://www.vietask.com/web/Danh-ba.asp?module=1", "title": "Danh bạ web" },
+            { "name": "SÁCH ĐIỆN TỬ", "link": "http://ebook.edu.vn", "title": "Sách điện tử" },
+            { "name": "VN SCHOOL.NET", "link": "http://vnschool.net", "title": "Trường học điện tử" },
+            { "name": "BUA XUA", "link": "http://www.buaxua.vn", "title": "Búa xua" },
+            { "name": "KỸ XẢO VIỆT", "link": "http://kyxaoviet.com", "title": "Kỹ xảo" },
+            { "name": "HỌC MÃI", "link": "http://hocmai.vn", "title": "" },
+            { "name": "GOOGLE MAP", "link": "https://www.google.com/maps", "title": "Bản đồ" },
+            { "name": "THƯỚC LỖ BAN", "link": "http://wonder.vn/phong-thuy/thuoc-lo-ban", "title": "Thước lỗ ban" },
+            { "name": "TECH.VCCLOUD.VN", "link": "https://tech.vccloud.vn/api-la-gi-phan-loai-va-vi-du-ve-api-20181101092024122.htm", "title": "TECH.VCCLOUD.VN" },
+            { "name": "QUẢN TRỊ MẠNG", "link": "https://quantrimang.com", "title": "QUẢN TRỊ MẠNG" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 3",
+          "items": [
+            { "name": "LẬP TRÌNH API", "link": "https://english.api.rakuten.net", "title": "LẬP TRÌNH API" },
+            { "name": "TECH MASTER", "link": "https://techmaster.vn", "title": "TECH MASTER" },
+            { "name": "SỨC KHỎE ĐỜI SỐNG", "link": "http://suckhoedoisong.vn", "title": "" },
+            { "name": "HÓA HỌC VIỆT NAM", "link": "http://hoahoc.org", "title": "" },
+            { "name": "ĐÔNG Y", "link": "http://dongy.wordpress.com", "title": "" },
+            { "name": "Y KHOA", "link": "http://ykhoa.net", "title": "" },
+            { "name": "THẦY THUỐC", "link": "http://thaythuoccuaban.com", "title": "Thầy thuốc của bạn" },
+            { "name": "AI LAO", "link": "http://ailaongayxua.weebly.com/index.html", "title": "Ai lao ngày xưa" },
+            { "name": "WATTPAD", "link": "http://www.wattpad.com", "title": "" },
+            { "name": "BẮC GIANG ONLINE", "link": "http://bacgiangonline.net", "title": "" },
+            { "name": "HƯỚNG NGHIỆP VIỆT", "link": "http://huongnghiepviet.com", "title": "" },
+            { "name": "THIẾT KẾ TRẺ", "link": "http://www.thietkelie.com", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 4",
+          "items": [
+            { "name": "VÕ THUẬT", "link": "http://vothuat.vn", "title": "" },
+            { "name": "ZALO CỦA TÔI", "link": "https://oa.zalo.me/manage/dashboard", "title": "" },
+            { "name": "XỔ SỐ MIỀN NAM", "link": "https://xsmn.mobi/", "title": "" },
+            { "name": "DOWN PHẦN MỀM", "link": "http://www.download.com.vn", "title": "" },
+            { "name": "CỜ TƯỚNG", "link": "./LINKWEB/LINKCOTUONG.HTML", "title": "" },
+            { "name": "SOFTPEDIA", "link": "http://www.softpedia.com", "title": "" },
+            { "name": "PHIM3S.NET", "link": "http://phim3s.net", "title": "" },
+            { "name": "GAMEVN.COM", "link": "http://gamevn.com", "title": "" },
+            { "name": "VIETMATHS", "link": "http://www.vietmaths.com", "title": "" },
+            { "name": "PHIM TRỰC TUYẾN", "link": "http://phimtructuyen.org", "title": "" },
+            { "name": "VIỆT NAM AIRLINES", "link": "http://vietnamairlines.com.vn", "title": "" },
+            { "name": "VẬT GIÁ", "link": "http://vatgia.com", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 5",
+          "items": [
+            { "name": "NHẠC MẠNG", "link": "http://nhac.mang.vn", "title": "" },
+            { "name": "GIA ĐÌNH", "link": "http://giadinh.net.vn", "title": "" },
+            { "name": "CAD VIỆT", "link": "http://www.cadviet.vn", "title": "" },
+            { "name": "TECH 24", "link": "http://tech24.vn", "title": "" },
+            { "name": "VÕ THUẬT LÂM ĐỒNG", "link": "http://vtct-ld.ucoz.com/blog", "title": "Liên đoàn võ thuật Lâm Đồng" },
+            { "name": "TAEKWONDO THẾ GIỚI", "link": "http://www.worldtaekwondo.org", "title": "" },
+            { "name": "TAEKWONDO ITA", "link": "http://itatkd.com", "title": "" },
+            { "name": "HOA VÔ ƯU", "link": "https://hoavouu.com", "title": "" },
+            { "name": "SÁT HẠCH LÁI XE", "link": "http://vnexpress.net/interactive/2016/thi-sat-hach-lai-xe", "title": "" },
+            { "name": "N LƯỢNG MẶT TRỜI", "link": "https://givasolar.com/", "title": "" },
+            { "name": "BẢNG PHONG THẦN", "link": "https://www.youtube.com/watch?v=os0bZiemWbU&list=PLh4trvZExvP2u01hV0V9vqQJ0tm6oaXhY", "title": "" },
+            { "name": "BÀI BÁO HAY", "link": "https://techmaster.vn/posts/6130/co-mot-thu-khong-bao-gio-thay-doi-chinh-la-su-thay-doi-bay-thoi-quen-cua-nguoi-co-eq-cao", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 6",
+          "items": [
+            { "name": "ĐÁNH GIÁ TEMIS", "link": "https://taphuan.csdl.edu.vn/", "title": "" },
+            { "name": "KIẾN THỨC MÁY TÍNH", "link": "https://docs.google.com/document/d/11asIXmmUv8Qnu0wC8JwbUt4q0tnRYdwj5eG_N8cG6QU/edit", "title": "Kiến thức máy tính" },
+            { "name": "HỌC LẬP TRÌNH", "link": "https://docs.google.com/document/d/131ChJb2qkFUVIR-0QQEL0YAXi_vyEHn-Z-1qwv9AEf4/edit", "title": "Học lập trình máy tính" },
+            { "name": "KHOA HỌC KỸ THUẬT", "link": "./LINKWEB/KHOAHOCKYTHUAT.HTML", "title": "Khoa học kỹ thuật" },
+            { "name": "KIẾN THỨC CUỘC SỐNG", "link": "./LINKWEB/KIENTHUC.HTML", "title": "Kiến thức trong cuộc sống" },
+            { "name": "ẢNH CƯỚI THÔNG", "link": "https://drive.google.com/drive/folders/1DF12O8NzWP8JJpwajAwao7ecyLtw1nGD?fbclid=IwAR0gFa_BiCZkGc-xJ1EW8eGjF77TN0ukmxLcRYtOt_XZc4-LQnSoDvhPhMs", "title": "Website mua hàng" },
+            { "name": "SỬA MÁY TÍNH PHOTO", "link": "https://docs.google.com/document/d/17MCo03Oc-fJc1jc9k7ia7QdPYEaYPuqdo5j7VnizIwQ/edit", "title": "Sửa chữa máy in - máy photocopy" },
+            { "name": "NHÁP CHƯA DUYỆT LINK", "link": "https://docs.google.com/document/d/1BJ01fMeL-YMcWhI4DjvZo2bAssy7GGPUpKxu4t4CKE8/edit", "title": "NHÁP CHƯA DUYỆT" },
+            { "name": "WEBDESIGNER", "link": "https://webdesigner.withgoogle.com/", "title": "THIẾT KẾ WEB VỚI WEBDESIGNER" },
+            { "name": "THIẾT KẾ VIDEO", "link": "https://app.clipchamp.com/signup", "title": "THIẾT KẾ VIDEO" },
+            { "name": "OFFICE.COM", "link": "https://www.office.com/apps?auth=2", "title": "LƯU DỮ LIỆU" },
+            { "name": "GEMINI", "link": "https://gemini.google.com/", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 7",
+          "items": [
+            { "name": "TEACHERS PAY TEACHER", "link": "http://teacherspayteachers.com", "title": "Teachers pay Teacher" },
+            { "name": "LỚP NGOẠI NGỮ", "link": "http://lopngoaingu.com/irregular-verbs.htm", "title": "Lớp ngoại ngữ" },
+            { "name": "SỞ GD TPHCM", "link": "https://hcm.edu.vn/homehcm", "title": "Sở GD & ĐT Bình Dương" },
+            { "name": "BỘ GD", "link": "http://moet.gov.vn", "title": "Bộ Giáo dục và Đào tạo" },
+            { "name": "ĐẠI HỌC BK TPHCM", "link": "http://hcmut.edu.vn", "title": "Đại học bách khoa tp Hồ Chí Minh" },
+            { "name": "ĐẠI HỌC BD", "link": "http://bdu.edu.vn", "title": "Đại học Bình Dương" },
+            { "name": "ĐẠI HỌC SP TPHCM", "link": "http://hcmup.edu.vn", "title": "Đại học sư phạm tp HCM" },
+            { "name": "ĐẠI HỌC BK HÀ NỘI", "link": "https://www.hust.edu.vn", "title": "Đại học bách khoa Hà Nội" },
+            { "name": "ĐẠI HỌC KHTN", "link": "http://hcmuns.edu.vn", "title": "Đại học KHTN" },
+            { "name": "ĐÁNH GIÁ GV", "link": "https://temis.csdl.edu.vn/temis/assessment/do-assessment", "title": "Đánh giá chuẩn giáo viên" },
+            { "name": "NHẬP ĐIỂM", "link": "https://vnedu.vn/", "title": "Nhập điểm online" },
+            { "name": "PERIODIC", "link": "https://ptable.com/?lang=en#Properties", "title": "PERIODIC" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 8",
+          "items": [
+            { "name": "NHÀ XUẤT BẢN GD", "link": "http://taphuan.nxbgd.vn", "title": "" },
+            { "name": "HỌC 10.VN", "link": "http://hoc10.vn", "title": "" },
+            { "name": "LỊCH VẠN NIÊN", "link": "https://lichvn.net/", "title": "" },
+            { "name": "MA TRẬN ĐỀ KT", "link": "https://padlet.com/minhhungnvtr/rhqjtuxi1r7k6xa2", "title": "" },
+            { "name": "TẬP HUẤN NXBGD", "link": "https://taphuan.nxbgd.vn/", "title": "123456Abc@  Vi@tM@i_77" },
+            { "name": "EDIT OBS", "link": "https://www.youtube.com/watch?v=PvPwV_fgsvk", "title": "edit OBS" },
+            { "name": "TẠO PHIM TRƯỜNG ẢO", "link": "https://www.youtube.com/watch?v=LqH0UDVgEIE", "title": "Tạo Trường Quay Ảo Với Phần Mềm Obs Để Phát TrựcTiếp Trên Facebook" },
+            { "name": "ĐỌC TÊN NGUYÊN TỐ", "link": "https://www.youtube.com/watch?v=solc6MqNQKo", "title": "VIẾT VÀ ĐỌC TÊN CÁC NGUYÊN TỐ HOÁ HỌC VÀ HỢP CHẤT BẰNG TIẾNG ANH - THẦY CAO CỰ GIÁC" },
+            { "name": "CHẤT CHỈ THỊ MÀU", "link": "https://www.youtube.com/watch?v=O9RgI-qgjhM", "title": "Làm chất chỉ thị pH từ Bắp Cải Tím | Mr. Skeleton Thí Nghiệm" },
+            { "name": "HOA ĐẬU BIẾC", "link": "https://www.youtube.com/watch?v=9heZ9nRsFpU", "title": "Thí Nghiệm với HOA ĐẬU BIẾC" },
+            { "name": "TERABOX-LƯU DỮ LIỆU", "link": "https://www.terabox.com/vietnamese/main?category=all&path=%2F", "title": "password: M@IVi@t76 user: taekwondonamviet@gmail.com" },
+            { "name": "CÁP ĐIỆN VIỆT NAM", "link": "https://cadivi.vn/vn/", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 9",
+          "items": [
+            { "name": "CANVA", "link": "https://www.canva.com/vi_vn/giao-duc/", "title": "mvviet@dayhoc.edu.vn" },
+            { "name": "BÌNH YÊN SAU ĐẠI DỊCH", "link": "https://go.fliplink.me/view/BinhYenSauDaiDichFull", "title": "password: tapthogiamloau" },
+            { "name": "SÁCH ĐIỆN TỬ", "link": "https://go.fliplink.me", "title": "user: taekwondonamviet@gmail.com      password: M@iVIET_23" },
+            { "name": "MAI VAN VIET", "link": "https://www.youtube.com/@maivviet/videos", "title": "" },
+            { "name": "LƯU VIDEO YOUTUBE", "link": "https://vi.savefrom.net/", "title": "" },
+            { "name": "TẠO GIỌNG NÓI", "link": "https://elevenlabs.io/", "title": "Tạo giọng nói của bạn với AI" },
+            { "name": "TẠO SUB", "link": "https://www.submagic.co/", "title": "Tạo sub tự động với hiệu ứng siêu mượt" },
+            { "name": "TĂNG VIRAL", "link": "https://www.taja.ai/", "title": "SEO cho video tăng khả năng lên xu hướng" },
+            { "name": "TẠO VIDEO TỪ TEXT", "link": "https://invideo.io/", "title": "Tạo video đẹp từ văn bản - tài khoản taekwondonamviet" },
+            { "name": "GIẢI PHÁP EXCEL", "link": "https://www.giaiphapexcel.com", "title": "" },
+            { "name": "TẠO ẢNH BẰNG AI", "link": "https://www.canva.com/vi_vn/tinh-nang/tao-anh-bang-ai/", "title": "mvviet@dayhoc.edu.vn" },
+            { "name": "TẠO ÂM THANH TỪ VĂN BẢN", "link": "https://www.narakeet.com/languages/text-to-speech-vietnamese-vi/#trynow", "title": "Tạo âm thanh từ văn bản" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 10",
+          "items": [
+            { "name": "TINHTE.VN", "link": "https://tinhte.vn/", "title": "" },
+            { "name": "GENK.VN", "link": "https://genk.vn/", "title": "" },
+            { "name": "TECHZ.VN", "link": "https://www.techz.vn/", "title": "" },
+            { "name": "VNREVIEW.VN/", "link": "https://vnreview.vn/", "title": "" },
+            { "name": "BUAXUA.VN", "link": "https://www.buaxua.vn/", "title": "" },
+            { "name": "VIETNAMNET.VN", "link": "https://vietnamnet.vn/thong-tin-truyen-thong", "title": "" },
+            { "name": "PCWORLD.COM", "link": "https://www.pcworld.com/", "title": "" },
+            { "name": "BIZFLYCLOUD.VN", "link": "https://bizflycloud.vn/", "title": "" },
+            { "name": "TECHCRUNCH.COM", "link": "https://techcrunch.com/", "title": "" },
+            { "name": "THENEXTWEB.COM", "link": "https://thenextweb.com/", "title": "" },
+            { "name": "WIRED.COM", "link": "https://www.wired.com/", "title": "" },
+            { "name": "CNET.COM", "link": "https://www.cnet.com/", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 11",
+          "items": [
+            { "name": "GIZMODO.COM/", "link": "https://gizmodo.com/", "title": "" },
+            { "name": "SEA.MASHABLE.COM", "link": "https://sea.mashable.com/", "title": "" },
+            { "name": "THEVERGE.COM", "link": "https://www.theverge.com/", "title": "" },
+            { "name": "DIGITALTRENDS.COM", "link": "https://www.digitaltrends.com/", "title": "" },
+            { "name": "TECHRADAR.COM", "link": "https://www.techradar.com/", "title": "" },
+            { "name": "ENGADGET.COM", "link": "https://www.engadget.com/", "title": "" },
+            { "name": "VẬT LÝ (MYPHYSICSLAB)", "link": "https://www.myphysicslab.com/", "title": "" },
+            { "name": "VẬT LÝ PT", "link": "https://vatlypt.com/", "title": "" },
+            { "name": "HÓA HỌC 247", "link": "https://hoahoc247.com/", "title": "" },
+            { "name": "HỌC HÓA ONLINE", "link": "https://hochoaonline.net/", "title": "" },
+            { "name": "PHƯƠNG TRÌNH HÓA HỌC", "link": "https://phuongtrinhhoahoc.com/", "title": "" },
+            { "name": "TOÁN MATH.COM", "link": "https://toanmath.com/", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 12",
+          "items": [
+            { "name": "TOÁN MOON.VN", "link": "https://moon.vn/home", "title": "" },
+            { "name": "LUYỆN THI", "link": "https://www.luyenthi123.com/", "title": "" },
+            { "name": "VĂN HỌC", "link": "https://vanhoctre.com/", "title": "" },
+            { "name": "VĂN.VN", "link": "https://vanvn.vn/", "title": "" },
+            { "name": "PHÊ BÌNH VĂN HỌC", "link": "https://phebinhvanhoc.com.vn/", "title": "" },
+            { "name": "NGOẠI NGỮ", "link": "https://ngoaingu24h.vn/", "title": "" },
+            { "name": "TIẾNG ANH", "link": "https://www.languageguide.org/vi/?l=ja", "title": "" },
+            { "name": "LÀNG MAI", "link": "https://langmai.org/", "title": "làng mai trang Phật giáo" },
+            { "name": "CHÙA BỬU LONG", "link": "https://www.trungtamhotong.org/index.php?module=sulieu&function=detail&id=5", "title": "trung tâm hộ tông" },
+            { "name": "MPC-HC MEDIA", "link": "https://github.com/mpc-hc/mpc-hc", "title": "" },
+            { "name": "THƯỚC LỖ BAN", "link": "https://kienanvinh.vn/thuoc-lo-ban-xay-dung", "title": "THƯỚC LỖ BAN" },
+            { "name": "AI GOOGLE", "link": "https://aistudio.google.com/", "title": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "LẬP TRÌNH",
+      "submenus": [
+        {
+          "title": "LẬP TRÌNH 1",
+          "items": [
+            { "name": "KODULAR.IO", "link": "https://creator.kodular.io", "title": "email: taekwondonamviet" },
+            { "name": "Lập trình MIT", "link": "http://ai2.appinventor.mit.edu", "title": "Lập trình drag and drop MIT" },
+            { "name": "THUNKABLE.COM", "link": "https://x.thunkable.com/login", "title": "Lập trình THUNKABLE.COM (Android OS and iOS)" },
+            { "name": "Lập trình Scratch", "link": "https://scratch.mit.edu", "title": "USER: maivanviet pass: 123456789" },
+            { "name": "VÒNG QUAY", "link": "https://wheelofnames.com/", "title": "VÒNG QUAY" },
+            { "name": "WEB VIEW (LOCAL)", "link": "https://www.youtube.com/watch?v=UTbXeBNIAwI", "title": "Load Local HTML Files Into WebView" },
+            { "name": "WEB VIEW (ANDROID)", "link": "https://www.youtube.com/watch?v=IM76XDsSt4E", "title": "Webview in Android Studio" },
+            { "name": "LOAD html", "link": "https://www.youtube.com/watch?v=n2KbDqoCv_Q", "title": "How to load a local html file in android studio" },
+            { "name": "RUN html", "link": "https://www.youtube.com/watch?v=JUYyk5xGyXs", "title": "How to run HTML files in your android app in android studio" },
+            { "name": "CONVERT WEB", "link": "https://www.youtube.com/watch?v=3jZ4dMeJR1A", "title": "Convert Web to App" },
+            { "name": "VIDEO VIEW", "link": "https://www.youtube.com/watch?v=xe2FIhvotHc", "title": "VideoView in Android Studio" },
+            { "name": "KẾT NỐI VỚI MySQL", "link": "https://www.youtube.com/watch?v=waZ-qqLuLco", "title": "Node JS - Express JS - Kết nối với MySQL - Thêm và truy cập dữ liệu" }
+          ]
+        },
+        {
+          "title": "LẬP TRÌNH 2",
+          "items": [
+            { "name": "FREECODECAMP", "link": "https://www.freecodecamp.org/", "title": "DẠY LẬP TRÌNH FREECODECAMP" },
+            { "name": "FIRESHIP.IO", "link": "https://fireship.io/", "title": "DẠY LẬP TRÌNH" },
+            { "name": "LEARNCODE ACADEMY", "link": "https://www.youtube.com/user/learncodeacademy", "title": "DẠY LẬP TRÌNH" },
+            { "name": "GITHUB.COM", "link": "https://github.com/", "title": "github.com/" },
+            { "name": "W3SCHOOLS.COM", "link": "https://www.w3schools.com/", "title": "W3SCHOOLS.COM" },
+            { "name": "Image to Base64", "link": "https://codebeautify.org/image-to-base64-converter", "title": "Convert image to base64" },
+            { "name": "CANVA THIẾT KẾ", "link": "https://www.canva.com/vi_vn/", "title": "THIẾT KẾ VIDEO" },
+            { "name": "DESIGNEVO", "link": "https://www.designevo.com/", "title": "THIẾT KẾ VIDEO" },
+            { "name": "LỊCH VIỆT", "link": "https://lichviet.app/", "title": "LỊCH VIỆT" },
+            { "name": "THƯ VIỆN VIOLET", "link": "https://docs.google.com/document/d/1yCSv9ytavl0xOaa0ZKmAJyAQ6nDeAGWoTCcVusnMmkY/edit", "title": "THƯ VIỆN VIOLET" },
+            { "name": "HỌC LẬP TRÌNH WEB", "link": "https://docs.google.com/document/d/1lFUhUvil720gXXJhBWWshxOHErX8M1zWXha8kgViPBQ/edit", "title": "HỌC LẬP TRÌNH WEB" },
+            { "name": "LẤY DATABASE", "link": "https://www.youtube.com/watch?v=8xuequ3mXDE", "title": "Lấy dữ liệu từ database với Php&Mysql" }
+          ]
+        },
+        {
+          "title": "LẬP TRÌNH 3",
+          "items": [
+            { "name": "HỌC MÔN HÓA HỌC", "link": "https://hocmonhoahoc.blogspot.com/", "title": "HỌC MÔN HÓA HỌC" },
+            { "name": "HỌC LẬP TRÌNH", "link": "https://hoclaptrinhungdung.blogspot.com/", "title": "HỌC LẬP TRÌNH" },
+            { "name": "MUA BÁN", "link": "https://laptopmayin.blogspot.com/", "title": "MUA BÁN MÁY TÍNH" },
+            { "name": "HỌC ANDROID", "link": "https://docs.google.com/document/d/1NU1tWmnuhTKp1DT7p-RuukHnE7l6V8E6ceqFMWYe9MA/edit", "title": "Học lập trình android" },
+            { "name": "MIT-THUNKABLE", "link": "https://docs.google.com/document/d/1HVgKvHNxXwDbix_Bcxq2-E0hV4G0NJqSanBN81oYXXU/edit", "title": "Học lập trình MIT-THUNKABLE" },
+            { "name": "HỌC PYTHON", "link": "https://docs.google.com/document/d/1YJJM8GFhpyG6l8FpMfJDVzxcHgSeq6BeY7EWsyCNU6g/edit", "title": "Học lập trình PYTHON" },
+            { "name": "HỌC ĐỒ HỌA", "link": "https://docs.google.com/document/d/1qwUcdzc4pcJqqgIhMEwPBwCMlMBj2V1ZVm3BT6ByE8o/edit", "title": "Học đồ họa" },
+            { "name": "TÀI LIỆU GITHUB", "link": "https://docs.google.com/document/d/1ZRpHLOJO7unj-o1UrAT5hz9MF9px4lr3_DkBZ5GJg0M/edit", "title": "GITHUB.COM" },
+            { "name": "HỌC iOS", "link": "https://docs.google.com/document/d/1cCSd-PvPRFOLguiHMwaRd6oWOdnztnLu7xNboVQ2GJ0/edit", "title": "Học iOS" },
+            { "name": "developermaiviet", "link": "https://youtube.com/developermaiviet", "title": "developermaiviet" },
+            { "name": "vdata.com.vn", "link": "https://vdata.com.vn/", "title": "developermaiviet" },
+            { "name": "KHO HỌC LIỆU SỐ", "link": "https://igiaoduc.vn/", "title": "Kho học liệu số" }
+          ]
+        },
+        {
+          "title": "LẬP TRÌNH 4",
+          "items": [
+            { "name": "SÁCH ĐIỆN TỬ", "link": "https://hanhtrangso.nxbgd.vn/sach-dien-tu?book_active=0&classes=11", "title": "Sách điện tử" },
+            { "name": "TỪ ĐIỂN", "link": "https://dictionary.cambridge.org/", "title": "" },
+            { "name": "ẢNH ONLINE", "link": "https://www.recraft.ai/", "title": "Thiết kế ảnh online" },
+            { "name": "Viet Nguyen", "link": "https://github.com/uvipen/", "title": "Viet Nguyen uvipen" },
+            { "name": "MACHINE LEARNING", "link": "https://www.youtube.com/watch?v=2iO6vU2BCh4", "title": "Machine Learning" },
+            { "name": "P5JS.ORG", "link": "https://p5js.org/", "title": "P5JS.ORG" },
+            { "name": "FULL STACK (YT)", "link": "https://www.youtube.com/watch?v=71uFmAWSqzQ", "title": "Full Stack" },
+            { "name": "LẬP TRÌNH FULL STACK", "link": "https://drive.google.com/drive/folders/1DudGaewkx-0nCiwiUr1sx0sdk0UCG7US", "title": "" },
+            { "name": "HACKER MŨ TRẮNG", "link": "https://drive.google.com/drive/folders/10rWxyFPMlz1pEzMXo8gwi1a6kmwU9SIe", "title": "HACKER MŨ TRẮNG" },
+            { "name": "LẬP TRÌNH WEB", "link": "https://drive.google.com/drive/folders/1Yg3qCxgILrGAhTBuhpA3tzKnM97hORd3", "title": "LẬP TRÌNH WEB" },
+            { "name": "JAVA TẢI NHIỀU FILE", "link": "https://www.youtube.com/watch?v=svZ-tEFadCI", "title": "" },
+            { "name": "JAVA CHUYỂN ẢNH", "link": "https://www.youtube.com/watch?v=mlmcQL9YZjU", "title": "" }
+          ]
+        },
+        {
+          "title": "LẬP TRÌNH 5",
+          "items": [
+            { "name": "CHATBOT", "link": "https://www.youtube.com/watch?v=CXhRP82Yv_s", "title": "" },
+            { "name": "webketoan.com", "link": "https://webketoan.com", "title": "" },
+            { "name": "ebook.edu.vn", "link": "http://ebook.edu.vn", "title": "" },
+            { "name": "cliptv.vn", "link": "https://cliptv.vn/", "title": "" },
+            { "name": "igiaoduc.vn", "link": "https://igiaoduc.vn/users/", "title": "" },
+            { "name": "codepen", "link": "https://codepen.io/", "title": "" },
+            { "name": "jsfiddle.net", "link": "http://jsfiddle.net/", "title": "" },
+            { "name": "olymptrade.com", "link": "https://olymptrade.com/platform", "title": "" },
+            { "name": "chemequations.com", "link": "https://chemequations.com/", "title": "" },
+            { "name": "giaiphapexcel.com", "link": "http://www.giaiphapexcel.com", "title": "" },
+            { "name": "doc.edu.vn", "link": "http://doc.edu.vn", "title": "" },
+            { "name": "tailieudoc.vn", "link": "https://tailieudoc.vn/", "title": "" }
+          ]
+        },
+        {
+          "title": "LẬP TRÌNH 6",
+          "items": [
+            { "name": "USER LIST APPLICATION", "link": "https://www.youtube.com/watch?v=2928W_p_jts", "title": "" },
+            { "name": "ĐĂNG NHẬP", "link": "https://www.youtube.com/watch?v=4ZbcmPSzQdU", "title": "" },
+            { "name": "stackoverflow.com", "link": "https://stackoverflow.com", "title": "" },
+            { "name": "ADS MANAGER", "link": "https://facebook.com/ads.manager", "title": "" },
+            { "name": "PAYPAL.COM", "link": "https://www.paypal.com/", "title": "" },
+            { "name": "TẠO QR CODE", "link": "https://me-qr.com/vi/qr-code-generator/qr", "title": "" },
+            { "name": "LÀM KARAOKE (TGDD)", "link": "https://www.thegioididong.com/game-app/top-8-phan-mem-lam-karaoke-chuyen-nghiep-nhat-tren-may-tinh-1325214", "title": "" },
+            { "name": "LÀM KARAOKE (CHẠY CHỮ)", "link": "https://lapdatamthanh.com/tin-tuc/phan-mem-chay-chu-karaoke.html", "title": "" },
+            { "name": "GIẢI PHẪU CƠ THỂ NGƯỜI", "link": "https://human.biodigital.com/", "title": "" },
+            { "name": "TỦ SÁCH VÕ THUẬT", "link": "https://tusachvothuat123.blogspot.com", "title": "" },
+            { "name": "Code VBA", "link": "./LINKWEB/VBA.HTML", "title": "" },
+            { "name": "KHOA HỌC MÁY TÍNH", "link": "./LINKWEB/MAYTINHVAMANG.HTML", "title": "" }
+          ]
+        },
+        {
+          "title": "LẬP TRÌNH 7",
+          "items": [
+            { "name": "Cài máy ảo MacOS trên Win 10", "link": "https://hc.com.vn/ords/nnews/cai-may-ao-macos-tren-win-10", "title": "" },
+            { "name": "TÀI LIỆU GIÁO DỤC", "link": "https://tailieugiaoduc.edu.vn/", "title": "" },
+            { "name": "DỊCH VỤ CÔNG", "link": "https://dichvucong.gdt.gov.vn/tthc/login", "title": "" },
+            { "name": "UNITY", "link": "https://unity.com/", "title": "" },
+            { "name": "GAMES", "link": "https://rec0ded88.com/", "title": "" },
+            { "name": "BÌNH DÂN HỌC VỤ SỐ", "link": "https://binhdanhocvuso.gov.vn/courses/course-v1:TPHCM+NCNQ-BCHTW+2026-1/courseware/547670ffd09f4629830c19d8769c1b82/cd09e317204b43b4a578a8cc3c247fbc/?activate_block_id=block-v1%3ATPHCM%2BNCNQ-BCHTW%2B2026-1%2Btype%40sequential%2Bblock%40cd09e317204b43b4a578a8cc3c247fbc", "title": "" },
+            { "name": "SÁCH AMAZON", "link": "https://kdp.amazon.com", "title": "" },
+            { "name": "NOTEBOOK", "link": "https://notebook.google.com", "title": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "YOUTUBE",
+      "submenus": [
+        {
+          "title": "CA NHẠC-GIẢI TRÍ 1",
+          "items": [
+            { "name": "Voice Assistant", "link": "https://www.youtube.com/watch?v=P3BHWnTf2nE", "title": "" },
+            { "name": "NGƯỜI XA VỀ THÀNH PHỐ", "link": "https://www.youtube.com/watch?v=1e_TrdsZeqo", "title": "" },
+            { "name": "SAO ANH KHÔNG VỀ", "link": "https://www.youtube.com/watch?v=oNYGt3CbPkg", "title": "" },
+            { "name": "Cho người vào cuộc chiến", "link": "https://www.youtube.com/watch?v=Tb2YxcxAxQA", "title": "" },
+            { "name": "BOLERO", "link": "https://www.youtube.com/watch?v=ICKYfsACItM", "title": "" },
+            { "name": "Lỡ Hẹn Với Dòng Lam", "link": "https://www.youtube.com/watch?v=2ijJIapmepk", "title": "" },
+            { "name": "Để Trả Lời Một Câu Hỏi 1", "link": "https://www.youtube.com/watch?v=YAhDOIhnPPM", "title": "" },
+            { "name": "Để Trả Lời Một Câu Hỏi 2", "link": "https://www.youtube.com/watch?v=EyKcckP9m-I", "title": "" },
+            { "name": "Anh Có Về Quảng Trị", "link": "https://www.youtube.com/watch?v=7ICPrZghra0", "title": "" },
+            { "name": "XUÂN HÒA", "link": "https://www.youtube.com/watch?v=2hocy8IW_Ss", "title": "" },
+            { "name": "X HÒA VH LÂM", "link": "https://www.youtube.com/watch?v=FJNYEqhXk0s", "title": "" },
+            { "name": "BẢO ANH", "link": "https://www.youtube.com/watch?v=aKoWyzducdI&list=RDaKoWyzducdI&start_radio=1", "title": "" }
+          ]
+        },
+        {
+          "title": "CA NHẠC-GIẢI TRÍ 2",
+          "items": [
+            { "name": "NGƯỜI XA VỀ THÀNH PHỐ", "link": "https://www.youtube.com/watch?v=pOOOZoPfKZc", "title": "" },
+            { "name": "BOLERO 1", "link": "https://www.youtube.com/watch?v=slexbRLG_h4", "title": "" },
+            { "name": "BOLERO 2", "link": "https://www.youtube.com/watch?v=A6UUQNLAwg8", "title": "" },
+            { "name": "EDM NHẠC XUÂN", "link": "https://youtu.be/NYYc_nTlpxk", "title": "" },
+            { "name": "NHẠC XUÂN", "link": "https://youtu.be/RkQ5XLKWIfU", "title": "" },
+            { "name": "NHẠC NG HƯNG", "link": "https://www.youtube.com/watch?v=euLHQZHG6_0", "title": "" },
+            { "name": "NHẠC LIÊN KHÚC", "link": "https://www.youtube.com/watch?v=PJfYt7JqkFI&list=RDPJfYt7JqkFI&start_radio=1", "title": "LK Tôi Nhớ Tên Anh, Lính Dù Lên Điểm, Đám Cưới Nhà Binh" },
+            { "name": "BẢO ANH MIX", "link": "https://www.youtube.com/watch?v=ljyP8H3Ttnc&list=RDljyP8H3Ttnc&start_radio=1", "title": "" },
+            { "name": "DÂN CA", "link": "https://www.youtube.com/watch?v=U8CA953L1kE", "title": "" },
+            { "name": "CỜ TƯỚNG", "link": "https://kyvuong.mobi/play/full/index.html?s=home", "title": "" }
+          ]
+        },
+        {
+          "title": "QUYỀN TAEKWONDO 1",
+          "items": [
+            { "name": "TAEGEUK 1", "link": "https://www.youtube.com/watch?v=Y-hRDpSuN_8", "title": "" },
+            { "name": "TAEGEUK 2", "link": "https://www.youtube.com/watch?v=TpI9BUNzTY4", "title": "" },
+            { "name": "TAEGEUK 3", "link": "https://www.youtube.com/watch?v=R0MntKwduPc", "title": "" },
+            { "name": "TAEGEUK 4", "link": "https://www.youtube.com/watch?v=sytGacyk3vs", "title": "" },
+            { "name": "TAEGEUK 5", "link": "https://www.youtube.com/watch?v=WPfvF9j2uSs", "title": "" },
+            { "name": "TAEGEUK 6", "link": "https://www.youtube.com/watch?v=doa5YkROdeE", "title": "" },
+            { "name": "TAEGEUK 7", "link": "https://www.youtube.com/watch?v=rbLoLAYFS_c", "title": "" },
+            { "name": "TAEGEUK 8", "link": "https://www.youtube.com/watch?v=Ebg7zpAtrlY", "title": "" },
+            { "name": "KORYO", "link": "https://www.youtube.com/watch?v=BwRvFjMPXlU", "title": "" },
+            { "name": "KEUMGANG", "link": "https://www.youtube.com/watch?v=tfavzWvG_s0", "title": "" },
+            { "name": "TAEBAEK", "link": "https://www.youtube.com/watch?v=Ewikv64NmBk", "title": "" },
+            { "name": "PYONGWON", "link": "https://www.youtube.com/watch?v=MskbdL3KgG4", "title": "" }
+          ]
+        },
+        {
+          "title": "QUYỀN TAEKWONDO 2",
+          "items": [
+            { "name": "SIPJIN", "link": "https://www.youtube.com/watch?v=gs7ap6MZUjI", "title": "" },
+            { "name": "JITAE", "link": "https://www.youtube.com/watch?v=eWCj1shuzwM", "title": "" },
+            { "name": "CHEONKWON", "link": "https://www.youtube.com/watch?v=pqYstKJS9tY", "title": "" },
+            { "name": "HANSU", "link": "https://www.youtube.com/watch?v=gDwROjRSyVs", "title": "" },
+            { "name": "ILYEO", "link": "https://www.youtube.com/watch?v=T6Z_74k8Q_Y", "title": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MAI VIỆT",
+      "submenus": [
+        {
+          "title": "MÁY IN - PHOTOCOPY",
+          "items": [
+            { "name": "THÁO LẮP CANON 6000", "link": "https://www.youtube.com/watch?v=fle8qJDAoUE", "title": "" },
+            { "name": "THAY BAO LỤA", "link": "https://www.youtube.com/watch?v=kV-VC41mPYA", "title": "" },
+            { "name": "LỖI MỰC IN", "link": "https://nsap.vn/huong-dan-su-ly-may-in-epson-loi-muc", "title": "" },
+            { "name": "SỬA HP 2035", "link": "https://www.youtube.com/watch?v=9Yjacc8_Cx4", "title": "" },
+            { "name": "IN TỪ ĐIỆN THOẠI", "link": "https://www.youtube.com/watch?v=oXu9aJ1tEB8", "title": "" },
+            { "name": "VỆ SINH EPSON L1800", "link": "https://www.youtube.com/watch?v=4vXabkQOHdw", "title": "" },
+            { "name": "EPSON L1800", "link": "https://mucinsaigon.com/may-in-epson-l1800-khong-ra-muc.html", "title": "" },
+            { "name": "TẮC ĐẦU PHUN", "link": "https://www.youtube.com/watch?v=_hZMVmFS2zI", "title": "" },
+            { "name": "SD ĐẦU PHUN", "link": "https://www.youtube.com/watch?v=ZiQ909TS0QI", "title": "" },
+            { "name": "PHOTO BỊ LEM MỰC", "link": "https://www.youtube.com/watch?v=rnLWk3AQ3U0", "title": "" },
+            { "name": "MỰC ĐÓNG CỨNG", "link": "https://www.youtube.com/watch?v=O099DZl_mVc", "title": "" },
+            { "name": "CHỈNH MÀN HÌNH", "link": "https://www.youtube.com/watch?v=CHbkHAQ5d2Y", "title": "" },
+            { "name": "ERROR SC324", "link": "https://www.youtube.com/watch?v=iC-81l2xZ30", "title": "" }
+          ]
+        },
+        {
+          "title": "THƯƠNG MẠI ĐIỆN TỬ",
+          "items": [
+            { "name": "TIKI", "link": "https://sellercenter.tiki.vn", "title": "" },
+            { "name": "SHOPEE", "link": "https://banhang.shopee.vn", "title": "" },
+            { "name": "LINH KIỆN PHOTOCOPY", "link": "http://mayvanphonghaanh.com", "title": "" },
+            { "name": "APP ĐẢNG VIÊN", "link": "https://drive.google.com/drive/folders/1fmepsSWTSA2jk_XzmsVtuzbbFJ3C0ozG", "title": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "AI - TRÍ TUỆ NHÂN TẠO",
+      "submenus": [
+        {
+          "title": "AI 1",
+          "items": [
+            { "name": "CHAT GPT", "link": "https://chat.openai.com/", "title": "" },
+            { "name": "SOẠN THUYẾT TRÌNH", "link": "https://gamma.app/vi", "title": "" },
+            { "name": "CHATBOTX.VN", "link": "https://chatbotx.vn/", "title": "" },
+            { "name": "LÀM VIDEO AI", "link": "https://www.synthesia.io/", "title": "" },
+            { "name": "VẼ TRANH BẰNG AI", "link": "https://www.midjourney.com/", "title": "" },
+            { "name": "VẼ HÌNH ẢNH", "link": "https://www.d-id.com/", "title": "" },
+            { "name": "CAPCUT", "link": "https://www.capcut.com/vi-vn/", "title": "" },
+            { "name": "THIẾT KẾ WEB", "link": "https://www.mixo.io/", "title": "" },
+            { "name": "CHUYỂN ĐỔI NGÔN NGỮ VIDEO", "link": "https://www.translate.video/", "title": "" },
+            { "name": "DỊCH NGÔN NGỮ", "link": "https://www.matecat.com/", "title": "" },
+            { "name": "CHỈNH SỬA ẢNH AI", "link": "https://www.evoto.ai/", "title": "" },
+            { "name": "MORISE AI", "link": "https://morise.ai/", "title": "" }
+          ]
+        },
+        {
+          "title": "AI 2",
+          "items": [
+            { "name": "XỬ LÝ HÌNH ẢNH", "link": "https://www.booth.ai/", "title": "" },
+            { "name": "TẠO LOGO", "link": "https://www.renderforest.com/", "title": "" },
+            { "name": "CHUYỂN TEXT THÀNH NHẠC", "link": "https://www.voicemod.net/", "title": "" },
+            { "name": "THIẾT KẾ UI TỪ VĂN BẢN", "link": "https://www.usegalileo.ai/", "title": "" },
+            { "name": "CODER", "link": "https://www.useblackbox.io/", "title": "" },
+            { "name": "AI TẠO ẢNH", "link": "https://autolook.vn/", "title": "" },
+            { "name": "TẠO VIDEO (GROK)", "link": "https://grok.com/", "title": "" },
+            { "name": "COPILOT", "link": "https://github.com/copilot", "title": "" },
+            { "name": "REMAKER.AI", "link": "https://remaker.ai/video-face-swap-online/", "title": "" },
+            { "name": "HỌC TẬP VỚI AI", "link": "https://hoc-tap-thong-minh-voi-ai.vercel.app/", "title": "" },
+            { "name": "TRÀ SỮA NGỌC NHI", "link": "https://ngocnhimilktea.vercel.app/", "title": "" },
+            { "name": "DOLA AI", "link": "https://www.dola.com/chat/", "title": "" }
+          ]
+        }
+      ]
+    }
+  ],
+  "logos": [
+    { "name": "Facebook", "link": "https://www.facebook.com", "image": "images/facebook.png" },
+    { "name": "Google", "link": "https://www.google.com", "image": "images/google.png" },
+    { "name": "YouTube", "link": "https://www.youtube.com", "image": "images/youtube.png" },
+    { "name": "Translate", "link": "https://translate.google.com", "image": "images/translate.png" },
+    { "name": "Võ Đường Mai Việt", "link": "https://voduongmaiviet.github.io/quanly/", "image": "images/voduong.png" },
+    { "name": "Cờ Tướng Ziga", "link": "https://zigavn.com/", "image": "images/cotuong.png" }
+  ]
+}

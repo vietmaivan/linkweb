@@ -1,0 +1,325 @@
+/* --- CƠ BẢN & RESET --- */
+:root {
+    --primary-dark: #1e293b;
+    --secondary-dark: #334155;
+    --accent-color: #10b981;
+    --accent-hover: #059669;
+    --text-light: #f8fafc;
+    --bg-page: #f1f5f9;
+    --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --transition-smooth: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+    color: #1e293b;
+}
+
+/* --- THANH ĐIỀU HƯỚNG CHÍNH (NAV) --- */
+nav {
+    background: rgba(30, 41, 59, 0.96);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-list > li {
+    position: relative;
+}
+
+.nav-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: var(--transition-smooth);
+    white-space: nowrap;
+    position: relative;
+}
+
+/* Gạch chân chạy mượt ở menu cấp 1 */
+.nav-list > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    transition: var(--transition-smooth);
+    transform: translateX(-50%);
+}
+
+.nav-list > li:hover > a::after,
+.nav-list > li.open > a::after {
+    width: 100%;
+}
+
+.nav-list > li:hover > a,
+.nav-list > li.open > a {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #34d399;
+}
+
+/* --- MENU CẤP 2 & CẤP 3 (HIỆU ỨNG TRƯỢT MƯỢT) --- */
+.dropdown,
+.submenu {
+    list-style: none;
+    position: absolute;
+    background-color: var(--secondary-dark);
+    min-width: 245px;
+    border-radius: 8px;
+    padding: 6px 0;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    
+    /* Ẩn mặc định bằng opacity & transform để có animation */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--transition-smooth);
+}
+
+.dropdown {
+    top: 100%;
+    left: 0;
+    transform: translateY(12px);
+    z-index: 100;
+}
+
+.dropdown .submenu {
+    top: -6px;
+    left: 100%;
+    margin-left: 4px;
+    transform: translateX(-10px);
+    z-index: 101;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+/* Thanh cuộn tinh gọn cho submenu dài */
+.dropdown .submenu::-webkit-scrollbar {
+    width: 5px;
+}
+.dropdown .submenu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+/* Trạng thái hiển thị mượt mà */
+.dropdown.show,
+.submenu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(0, 0);
+}
+
+.dropdown li a {
+    padding: 11px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.dropdown li a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding-left: 23px; /* Hiệu ứng đẩy chữ nhẹ sang phải */
+    border-left-color: #fff;
+}
+
+.arrow {
+    font-size: 11px;
+    margin-left: 8px;
+    transition: transform 0.25s ease;
+    display: inline-block;
+}
+
+.has-dropdown.open > a .arrow {
+    transform: rotate(180deg);
+}
+
+.has-submenu.open > a .arrow {
+    transform: rotate(90deg);
+}
+
+/* --- THANH TÌM KIẾM NHANH --- */
+.search-section {
+    max-width: 650px;
+    margin: 35px auto 15px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 48px 14px 20px;
+    font-size: 15px;
+    border: 2px solid #cbd5e1;
+    border-radius: 50px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.search-box input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 18px;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.search-results {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 15px;
+    right: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    max-height: 350px;
+    overflow-y: auto;
+    z-index: 900;
+    display: none;
+    border: 1px solid #e2e8f0;
+}
+
+.search-results.active {
+    display: block;
+    animation: fadeInDown 0.25s ease;
+}
+
+.search-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #1e293b;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.2s;
+}
+
+.search-item:hover {
+    background: #ecfdf5;
+    color: var(--accent-hover);
+}
+
+.search-item-cat {
+    font-size: 11px;
+    background: #e2e8f0;
+    color: #475569;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- KHU VỰC LOGO & LIÊN KẾT --- */
+.logo_all {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1100px;
+    padding: 0 15px;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 14px 22px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: var(--transition-smooth);
+}
+
+.logo-container a:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(16, 185, 129, 0.22);
+    border-color: var(--accent-color);
+}
+
+.logo-container img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* --- NÚT HAMBURGER MOBILE (CÓ HIỆU ỨNG XOAY THÀNH DẤU X) --- */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary-dark);
+    border-radius: 8px;
+    position: fixed;
+    top: 10px;
+    right: 12px;
+    z-index: 1100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.menu-toggle .bar {
+    width: 24px;
+    height: 2.5px;
+    background-color: #fff;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Cổng Liên Kết Web - Mai Việt</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Nút Menu Hamburger cho Mobile -->
+  <div class="menu-toggle" id="mobile-menu" aria-label="Mở menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+
+  <!-- Thanh điều hướng động -->
+  <nav id="main-nav">
+    <div class="nav-container">
+      <ul class="nav-list" id="nav-list">
+        <!-- Dữ liệu menu sẽ được tự động nạp từ data.json -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Khu vực tìm kiếm nhanh -->
+  <div class="search-section">
+      <div class="search-box">
+          <input type="text" id="quick-search" placeholder="Tìm nhanh liên kết (VD: Taekwondo, Canva, Hóa học, Báo tuổi trẻ...)" autocomplete="off">
+          <span class="search-icon">🔍</span>
+      </div>
+      <div class="search-results" id="search-results"></div>
+  </div>
+  
+  <!-- Khu vực Logo truy cập nhanh -->
+  <div class="logo_all">
+      <div class="logo-container" id="logo-container">
+          <!-- Dữ liệu logo sẽ được tự động nạp từ data.json -->
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "menu": [
+    {
+      "title": "BÁO ĐIỆN TỬ",
+      "submenus": [
+        {
+          "title": "BÁO ĐIỆN TỬ 1",
+          "items": [
+            { "name": "BÁO TUỔI TRẺ", "link": "https://tuoitre.vn", "title": "Báo tuổi trẻ" },
+            { "name": "VN EXPRESS.NET", "link": "https://vnexpress.net", "title": "Tin nhanh Việt Nam" },
+            { "name": "24H.COM.VN", "link": "https://www.24h.com.vn", "title": "24h.com.vn" },
+            { "name": "APP.AISTUDIOS.COM", "link": "https://app.aistudios.com/", "title": "taekwondonamviet" },
+            { "name": "BÁO BÌNH DƯƠNG", "link": "http://baobinhduong.vn", "title": "Báo Bình Dương" },
+            { "name": "TIN THỂ THAO", "link": "http://tinthethao.com.vn", "title": "Tin thể thao" },
+            { "name": "THANH NIÊN", "link": "http://thanhnien.com.vn", "title": "Báo Thanh Niên" },
+            { "name": "TIN MỚI", "link": "http://tinmoi.vn", "title": "Báo tin mới" },
+            { "name": "KÊNH 14", "link": "http://kenh14.vn", "title": "Báo kênh 14" },
+            { "name": "BÁO DÂN TRÍ", "link": "http://dantri.com.vn", "title": "Báo dân trí" },
+            { "name": "TIN 247", "link": "http://tin247.com", "title": "Báo tin 247" },
+            { "name": "HƯƠNG LÊ", "link": "https://www.youtube.com/@HuongLe_Official/videos", "title": "Hương Lê" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 2",
+          "items": [
+            { "name": "GIÁO DỤC", "link": "http://giaoduc.net.vn", "title": "Báo giáo dục" },
+            { "name": "VIỆT BÁO", "link": "http://vietbao.vn", "title": "Việt báo" },
+            { "name": "DANH BẠ WEB", "link": "http://www.vietask.com/web/Danh-ba.asp?module=1", "title": "Danh bạ web" },
+            { "name": "SÁCH ĐIỆN TỬ", "link": "http://ebook.edu.vn", "title": "Sách điện tử" },
+            { "name": "VN SCHOOL.NET", "link": "http://vnschool.net", "title": "Trường học điện tử" },
+            { "name": "BUA XUA", "link": "http://www.buaxua.vn", "title": "Búa xua" },
+            { "name": "KỸ XẢO VIỆT", "link": "http://kyxaoviet.com", "title": "Kỹ xảo" },
+            { "name": "HỌC MÃI", "link": "http://hocmai.vn", "title": "" },
+            { "name": "GOOGLE MAP", "link": "https://www.google.com/maps", "title": "Bản đồ" },
+            { "name": "THƯỚC LỖ BAN", "link": "http://wonder.vn/phong-thuy/thuoc-lo-ban", "title": "Thước lỗ ban" },
+            { "name": "TECH.VCCLOUD.VN", "link": "https://tech.vccloud.vn/api-la-gi-phan-loai-va-vi-du-ve-api-20181101092024122.htm", "title": "TECH.VCCLOUD.VN" },
+            { "name": "QUẢN TRỊ MẠNG", "link": "https://quantrimang.com", "title": "QUẢN TRỊ MẠNG" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 3",
+          "items": [
+            { "name": "LẬP TRÌNH API", "link": "https://english.api.rakuten.net", "title": "LẬP TRÌNH API" },
+            { "name": "TECH MASTER", "link": "https://techmaster.vn", "title": "TECH MASTER" },
+            { "name": "SỨC KHỎE ĐỜI SỐNG", "link": "http://suckhoedoisong.vn", "title": "" },
+            { "name": "HÓA HỌC VIỆT NAM", "link": "http://hoahoc.org", "title": "" },
+            { "name": "ĐÔNG Y", "link": "http://dongy.wordpress.com", "title": "" },
+            { "name": "Y KHOA", "link": "http://ykhoa.net", "title": "" },
+            { "name": "THẦY THUỐC", "link": "http://thaythuoccuaban.com", "title": "Thầy thuốc của bạn" },
+            { "name": "AI LAO", "link": "http://ailaongayxua.weebly.com/index.html", "title": "Ai lao ngày xưa" },
+            { "name": "WATTPAD", "link": "http://www.wattpad.com", "title": "" },
+            { "name": "BẮC GIANG ONLINE", "link": "http://bacgiangonline.net", "title": "" },
+            { "name": "HƯỚNG NGHIỆP VIỆT", "link": "http://huongnghiepviet.com", "title": "" },
+            { "name": "THIẾT KẾ TRẺ", "link": "http://www.thietkelie.com", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 4",
+          "items": [
+            { "name": "VÕ THUẬT", "link": "http://vothuat.vn", "title": "" },
+            { "name": "ZALO CỦA TÔI", "link": "https://oa.zalo.me/manage/dashboard", "title": "" },
+            { "name": "XỔ SỐ MIỀN NAM", "link": "https://xsmn.mobi/", "title": "" },
+            { "name": "DOWN PHẦN MỀM", "link": "http://www.download.com.vn", "title": "" },
+            { "name": "CỜ TƯỚNG", "link": "./LINKWEB/LINKCOTUONG.HTML", "title": "" },
+            { "name": "SOFTPEDIA", "link": "http://www.softpedia.com", "title": "" },
+            { "name": "PHIM3S.NET", "link": "http://phim3s.net", "title": "" },
+            { "name": "GAMEVN.COM", "link": "http://gamevn.com", "title": "" },
+            { "name": "VIETMATHS", "link": "http://www.vietmaths.com", "title": "" },
+            { "name": "PHIM TRỰC TUYẾN", "link": "http://phimtructuyen.org", "title": "" },
+            { "name": "VIỆT NAM AIRLINES", "link": "http://vietnamairlines.com.vn", "title": "" },
+            { "name": "VẬT GIÁ", "link": "http://vatgia.com", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 5",
+          "items": [
+            { "name": "NHẠC MẠNG", "link": "http://nhac.mang.vn", "title": "" },
+            { "name": "GIA ĐÌNH", "link": "http://giadinh.net.vn", "title": "" },
+            { "name": "CAD VIỆT", "link": "http://www.cadviet.vn", "title": "" },
+            { "name": "TECH 24", "link": "http://tech24.vn", "title": "" },
+            { "name": "VÕ THUẬT LÂM ĐỒNG", "link": "http://vtct-ld.ucoz.com/blog", "title": "Liên đoàn võ thuật Lâm Đồng" },
+            { "name": "TAEKWONDO THẾ GIỚI", "link": "http://www.worldtaekwondo.org", "title": "" },
+            { "name": "TAEKWONDO ITA", "link": "http://itatkd.com", "title": "" },
+            { "name": "HOA VÔ ƯU", "link": "https://hoavouu.com", "title": "" },
+            { "name": "SÁT HẠCH LÁI XE", "link": "http://vnexpress.net/interactive/2016/thi-sat-hach-lai-xe", "title": "" },
+            { "name": "N LƯỢNG MẶT TRỜI", "link": "https://givasolar.com/", "title": "" },
+            { "name": "BẢNG PHONG THẦN", "link": "https://www.youtube.com/watch?v=os0bZiemWbU&list=PLh4trvZExvP2u01hV0V9vqQJ0tm6oaXhY", "title": "" },
+            { "name": "BÀI BÁO HAY", "link": "https://techmaster.vn/posts/6130/co-mot-thu-khong-bao-gio-thay-doi-chinh-la-su-thay-doi-bay-thoi-quen-cua-nguoi-co-eq-cao", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 6",
+          "items": [
+            { "name": "ĐÁNH GIÁ TEMIS", "link": "https://taphuan.csdl.edu.vn/", "title": "" },
+            { "name": "KIẾN THỨC MÁY TÍNH", "link": "https://docs.google.com/document/d/11asIXmmUv8Qnu0wC8JwbUt4q0tnRYdwj5eG_N8cG6QU/edit", "title": "Kiến thức máy tính" },
+            { "name": "HỌC LẬP TRÌNH", "link": "https://docs.google.com/document/d/131ChJb2qkFUVIR-0QQEL0YAXi_vyEHn-Z-1qwv9AEf4/edit", "title": "Học lập trình máy tính" },
+            { "name": "KHOA HỌC KỸ THUẬT", "link": "./LINKWEB/KHOAHOCKYTHUAT.HTML", "title": "Khoa học kỹ thuật" },
+            { "name": "KIẾN THỨC CUỘC SỐNG", "link": "./LINKWEB/KIENTHUC.HTML", "title": "Kiến thức trong cuộc sống" },
+            { "name": "ẢNH CƯỚI THÔNG", "link": "https://drive.google.com/drive/folders/1DF12O8NzWP8JJpwajAwao7ecyLtw1nGD?fbclid=IwAR0gFa_BiCZkGc-xJ1EW8eGjF77TN0ukmxLcRYtOt_XZc4-LQnSoDvhPhMs", "title": "Website mua hàng" },
+            { "name": "SỬA MÁY TÍNH PHOTO", "link": "https://docs.google.com/document/d/17MCo03Oc-fJc1jc9k7ia7QdPYEaYPuqdo5j7VnizIwQ/edit", "title": "Sửa chữa máy in - máy photocopy" },
+            { "name": "NHÁP CHƯA DUYỆT LINK", "link": "https://docs.google.com/document/d/1BJ01fMeL-YMcWhI4DjvZo2bAssy7GGPUpKxu4t4CKE8/edit", "title": "NHÁP CHƯA DUYỆT" },
+            { "name": "WEBDESIGNER", "link": "https://webdesigner.withgoogle.com/", "title": "THIẾT KẾ WEB VỚI WEBDESIGNER" },
+            { "name": "THIẾT KẾ VIDEO", "link": "https://app.clipchamp.com/signup", "title": "THIẾT KẾ VIDEO" },
+            { "name": "OFFICE.COM", "link": "https://www.office.com/apps?auth=2", "title": "LƯU DỮ LIỆU" },
+            { "name": "GEMINI", "link": "https://gemini.google.com/", "title": "" }
+          ]
+        },
+        {
+          "title": "BÁO ĐIỆN TỬ 7",
+          "items": [
+            { "name": "TEACHERS PAY TEACHER", "link": "http://teacherspayteachers.com", "title": "Teachers pay Teacher" },
+            { "
