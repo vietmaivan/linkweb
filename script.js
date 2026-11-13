@@ -33,13 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menuData.forEach(menuItem => {
             const li = document.createElement("li");
+            li.className = "has-dropdown";
             const a = document.createElement("a");
             a.href = menuItem.link || "#";
             a.innerHTML = `${menuItem.title} ${menuItem.submenus ? '<span class="arrow">&#9662;</span>' : ''}`;
             li.appendChild(a);
 
             if (menuItem.submenus && menuItem.submenus.length > 0) {
-                li.classList.add("has-dropdown");
                 const ulDropdown = document.createElement("ul");
                 ulDropdown.className = "dropdown";
 
@@ -115,24 +115,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 4. Hàm kiểm tra và tự động lật menu sang trái nếu tràn màn hình
+    // 4. Hàm kiểm tra và tự động lật menu cấp 2 & cấp 3 khi tràn màn hình
     function checkOverflow(li) {
         if (window.innerWidth <= 992) return; // Bỏ qua trên mobile
 
-        const dropdown = li.querySelector(":scope > .dropdown, :scope > .submenu");
-        if (!dropdown) return;
+        // Kiểm tra menu cấp 2
+        const dropdown = li.querySelector(":scope > .dropdown");
+        if (dropdown) {
+            dropdown.classList.remove("align-left");
+            const rect = dropdown.getBoundingClientRect();
+            if (rect.right > window.innerWidth - 15) {
+                dropdown.classList.add("align-left");
+            }
+        }
 
-        // Reset về mặc định bên phải để đo chính xác vị trí
-        dropdown.classList.remove("align-left");
-        li.classList.remove("flip-arrow");
-
-        const rect = dropdown.getBoundingClientRect();
-        const viewportWidth = window.innerWidth;
-
-        // Nếu mép phải của menu vượt quá chiều rộng màn hình (chừa lề 15px)
-        if (rect.right > viewportWidth - 15) {
-            dropdown.classList.add("align-left");
-            if (li.classList.contains("has-submenu")) {
+        // Kiểm tra menu cấp 3 (Submenu)
+        const submenu = li.querySelector(":scope > .submenu");
+        if (submenu) {
+            submenu.classList.remove("align-left");
+            li.classList.remove("flip-arrow");
+            const rectSub = submenu.getBoundingClientRect();
+            if (rectSub.right > window.innerWidth - 15) {
+                submenu.classList.add("align-left");
                 li.classList.add("flip-arrow");
             }
         }
@@ -148,21 +152,20 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        const navItems = navList.querySelectorAll("li");
-        navItems.forEach(li => {
-            // Rê chuột vào (Desktop): Tự động tính toán chống tràn màn hình
+        const allLiItems = navList.querySelectorAll("li");
+        allLiItems.forEach(li => {
+            // Rê chuột vào (Desktop): Tự động tính toán chống tràn màn hình mượt mà
             li.addEventListener("mouseenter", () => {
                 checkOverflow(li);
             });
 
-            // Click/Chạm: Dùng cho Mobile hoặc khi người dùng bấm vào mục cha
+            // Click/Chạm: Dành cho Mobile hoặc khi bấm trực tiếp vào mục cha
             const link = li.querySelector(":scope > a");
-            link.addEventListener("click", (e) => {
-                const dropdown = li.querySelector(":scope > .dropdown, :scope > .submenu");
-                if (dropdown) {
-                    e.preventDefault();
-                    // Chỉ toggle class trên mobile (trên PC đã có CSS :hover lo)
-                    if (window.innerWidth <= 992) {
+            if (link) {
+                link.addEventListener("click", (e) => {
+                    const dropdown = li.querySelector(":scope > .dropdown, :scope > .submenu");
+                    if (dropdown && window.innerWidth <= 992) {
+                        e.preventDefault();
                         const siblings = li.parentElement.children;
                         for (let sib of siblings) {
                             if (sib !== li) {
@@ -174,8 +177,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         li.classList.toggle("open");
                         dropdown.classList.toggle("show");
                     }
-                }
-            });
+                });
+            }
         });
 
         // Tìm kiếm nhanh

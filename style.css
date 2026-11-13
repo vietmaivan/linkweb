@@ -7,7 +7,7 @@
     --text-light: #f8fafc;
     --bg-page: #f1f5f9;
     --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    --transition-smooth: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -96,34 +96,44 @@ nav {
     list-style: none;
     position: absolute;
     background-color: var(--secondary-dark);
-    min-width: 245px;
+    min-width: 250px;
     border-radius: 8px;
     padding: 6px 0;
     box-shadow: var(--shadow-soft);
     border: 1px solid rgba(255, 255, 255, 0.08);
     
-    /* Ẩn mặc định bằng opacity & transform để có animation */
+    /* Ẩn mặc định bằng opacity & transform để có animation mượt */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: var(--transition-smooth);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
 }
 
 .dropdown {
     top: 100%;
     left: 0;
-    transform: translateY(12px);
+    transform: translateY(10px);
     z-index: 100;
 }
 
+/* Mặc định menu cấp 3 bung sang bên phải */
 .dropdown .submenu {
     top: -6px;
     left: 100%;
     margin-left: 4px;
-    transform: translateX(-10px);
+    transform: translateX(10px);
     z-index: 101;
     max-height: 75vh;
     overflow-y: auto;
+}
+
+/* Khi menu cấp 3 bị tràn màn hình phải -> Lật sang trái */
+.dropdown .submenu.align-left {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 4px;
+    transform: translateX(-10px);
 }
 
 /* Thanh cuộn tinh gọn cho submenu dài */
@@ -135,13 +145,17 @@ nav {
     border-radius: 10px;
 }
 
-/* Trạng thái hiển thị mượt mà */
+/* Trạng thái hiển thị mở (Desktop Hover & Mobile Click) */
 .dropdown.show,
 .submenu.show {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translate(0, 0);
+}
+
+.dropdown li {
+    position: relative;
 }
 
 .dropdown li a {
@@ -154,7 +168,7 @@ nav {
 .dropdown li a:hover {
     background-color: var(--accent-color);
     color: #fff;
-    padding-left: 23px; /* Hiệu ứng đẩy chữ nhẹ sang phải */
+    padding-left: 23px; /* Hiệu ứng đẩy chữ nhẹ sang phải rất sinh động */
     border-left-color: #fff;
 }
 
@@ -171,6 +185,36 @@ nav {
 
 .has-submenu.open > a .arrow {
     transform: rotate(90deg);
+}
+
+/* --- TỰ ĐỘNG HIỆN MENU KHI RÊ CHUỘT TRÊN MÁY TÍNH (DESKTOP) --- */
+@media (min-width: 993px) {
+    .nav-list li.has-dropdown:hover > .dropdown,
+    .nav-list li.has-submenu:hover > .submenu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(0, 0);
+    }
+
+    /* Xoay mũi tên khi hover cấp 1 */
+    .nav-list li.has-dropdown:hover > a .arrow {
+        transform: rotate(180deg);
+    }
+    /* Xoay mũi tên khi hover cấp 2 (bung phải) */
+    .nav-list li.has-submenu:hover > a .arrow {
+        transform: rotate(90deg);
+    }
+    /* Xoay ngược mũi tên cấp 2 khi lật sang trái */
+    .has-submenu.flip-arrow:hover > a .arrow {
+        transform: rotate(-90deg) !important;
+    }
+}
+
+/* --- XỬ LÝ TRÀN MÀN HÌNH BÊN PHẢI CHO MENU CẤP 2 --- */
+.dropdown.align-left {
+    left: auto;
+    right: 0;
 }
 
 /* --- THANH TÌM KIẾM NHANH --- */
@@ -301,7 +345,7 @@ nav {
     transition: transform 0.3s ease;
 }
 
-/* --- NÚT HAMBURGER MOBILE (CÓ HIỆU ỨNG XOAY THÀNH DẤU X) --- */
+/* --- NÚT HAMBURGER MOBILE --- */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -360,48 +404,4 @@ nav {
     .dropdown.show, .submenu.show {
         display: block;
     }
-}
-/* --- TỰ ĐỘNG HIỆN MENU KHI RÊ CHUỘT TRÊN MÁY TÍNH --- */
-@media (min-width: 993px) {
-    .nav-list li.has-dropdown:hover > .dropdown,
-    .nav-list li.has-submenu:hover > .submenu {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        transform: translate(0, 0);
-    }
-
-    /* Xoay mũi tên khi hover */
-    .nav-list li.has-dropdown:hover > a .arrow {
-        transform: rotate(180deg);
-    }
-    .nav-list li.has-submenu:hover > a .arrow {
-        transform: rotate(90deg);
-    }
-}
-
-/* --- CHỐNG TRÀN MÀN HÌNH BÊN PHẢI (LẬT SANG TRÁI) --- */
-/* Dành cho menu cấp 2 sát mép phải */
-.dropdown.align-left {
-    left: auto;
-    right: 0;
-}
-
-/* Dành cho menu cấp 3 bị tràn mép phải -> bung sang bên trái */
-.dropdown .submenu.align-left {
-    left: auto;
-    right: 100%;
-    margin-left: 0;
-    margin-right: 4px;
-    transform: translateX(10px);
-}
-
-.dropdown .submenu.align-left.show,
-.nav-list li.has-submenu:hover > .submenu.align-left {
-    transform: translateX(0);
-}
-
-/* Đổi hướng mũi tên nếu menu lật sang trái */
-.has-submenu.flip-arrow > a .arrow {
-    transform: rotate(180deg) !important;
 }
