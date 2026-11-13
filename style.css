@@ -323,3 +323,47 @@ nav {
     width: 24px;
     height: 2.5px;
     background-color: #fff;
+/* --- TỰ ĐỘNG HIỆN MENU KHI RÊ CHUỘT TRÊN MÁY TÍNH --- */
+@media (min-width: 993px) {
+    .nav-list li.has-dropdown:hover > .dropdown,
+    .nav-list li.has-submenu:hover > .submenu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(0, 0);
+    }
+
+    /* Xoay mũi tên khi hover */
+    .nav-list li.has-dropdown:hover > a .arrow {
+        transform: rotate(180deg);
+    }
+    .nav-list li.has-submenu:hover > a .arrow {
+        transform: rotate(90deg);
+    }
+}
+
+/* --- CHỐNG TRÀN MÀN HÌNH BÊN PHẢI (LẬT SANG TRÁI) --- */
+/* Dành cho menu cấp 2 sát mép phải */
+.dropdown.align-left {
+    left: auto;
+    right: 0;
+}
+
+/* Dành cho menu cấp 3 bị tràn mép phải -> bung sang bên trái */
+.dropdown .submenu.align-left {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 4px;
+    transform: translateX(10px);
+}
+
+.dropdown .submenu.align-left.show,
+.nav-list li.has-submenu:hover > .submenu.align-left {
+    transform: translateX(0);
+}
+
+/* Đổi hướng mũi tên nếu menu lật sang trái */
+.has-submenu.flip-arrow > a .arrow {
+    transform: rotate(180deg) !important;
+}

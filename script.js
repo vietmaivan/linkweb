@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Đường dẫn tới tệp JSON chứa dữ liệu
     const DATA_URL = "data.json";
 
-    // Lấy các phần tử DOM cần thiết
     const navList = document.getElementById("nav-list");
     const logoContainer = document.getElementById("logo-container");
     const mobileMenuToggle = document.getElementById("mobile-menu");
@@ -12,12 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let allSearchableItems = [];
 
-    // Tải dữ liệu từ data.json
     fetch(DATA_URL)
         .then(response => {
-            if (!response.ok) {
-                throw new Error("Không thể tải file dữ liệu data.json");
-            }
+            if (!response.ok) throw new Error("Không thể tải file dữ liệu data.json");
             return response.json();
         })
         .then(data => {
@@ -30,17 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             initInteractions();
         })
-        .catch(error => {
-            console.error("Lỗi khi tải dữ liệu:", error);
-        });
+        .catch(error => console.error("Lỗi khi tải dữ liệu:", error));
 
-    // 1. Hàm render Menu cấp 1, cấp 2, cấp 3
+    // 1. Render Menu đa cấp
     function renderMenu(menuData, parentElement) {
         parentElement.innerHTML = "";
 
         menuData.forEach(menuItem => {
             const li = document.createElement("li");
-            
             const a = document.createElement("a");
             a.href = menuItem.link || "#";
             a.innerHTML = `${menuItem.title} ${menuItem.submenus ? '<span class="arrow">&#9662;</span>' : ''}`;
@@ -54,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 menuItem.submenus.forEach(submenu => {
                     const subLi = document.createElement("li");
                     const subA = document.createElement("a");
+                    subA.href = "#";
                     subA.innerHTML = `${submenu.title} ${submenu.items ? '<span class="arrow">&#9656;</span>' : ''}`;
                     subLi.appendChild(subA);
 
@@ -68,27 +61,22 @@ document.addEventListener("DOMContentLoaded", () => {
                             itemA.href = item.link;
                             itemA.textContent = item.name;
                             itemA.target = "_blank";
-                            if (item.title) {
-                                itemA.title = item.title;
-                            }
+                            if (item.title) itemA.title = item.title;
                             itemLi.appendChild(itemA);
                             ulSubmenu.appendChild(itemLi);
                         });
 
                         subLi.appendChild(ulSubmenu);
                     }
-
                     ulDropdown.appendChild(subLi);
                 });
-
                 li.appendChild(ulDropdown);
             }
-
             parentElement.appendChild(li);
         });
     }
 
-    // 2. Hàm render Logo truy cập nhanh
+    // 2. Render Logo
     function renderLogos(logosData, parentElement) {
         parentElement.innerHTML = "";
         logosData.forEach(logo => {
@@ -106,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 3. Xây dựng danh mục tìm kiếm nhanh
+    // 3. Tạo chỉ mục tìm kiếm
     function buildSearchIndex(menuData) {
         allSearchableItems = [];
         menuData.forEach(menu => {
@@ -127,7 +115,30 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 4. Xử lý các hiệu ứng tương tác (Hover, Click Mobile, Search)
+    // 4. Hàm kiểm tra và tự động lật menu sang trái nếu tràn màn hình
+    function checkOverflow(li) {
+        if (window.innerWidth <= 992) return; // Bỏ qua trên mobile
+
+        const dropdown = li.querySelector(":scope > .dropdown, :scope > .submenu");
+        if (!dropdown) return;
+
+        // Reset về mặc định bên phải để đo chính xác vị trí
+        dropdown.classList.remove("align-left");
+        li.classList.remove("flip-arrow");
+
+        const rect = dropdown.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+
+        // Nếu mép phải của menu vượt quá chiều rộng màn hình (chừa lề 15px)
+        if (rect.right > viewportWidth - 15) {
+            dropdown.classList.add("align-left");
+            if (li.classList.contains("has-submenu")) {
+                li.classList.add("flip-arrow");
+            }
+        }
+    }
+
+    // 5. Khởi tạo các tương tác
     function initInteractions() {
         // Toggle menu mobile
         if (mobileMenuToggle && mainNav) {
@@ -137,17 +148,21 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        // Xử lý sự kiện click trên menu cấp 1/2 cho thiết bị cảm ứng / mobile
         const navItems = navList.querySelectorAll("li");
         navItems.forEach(li => {
-            const link = li.querySelector("a");
+            // Rê chuột vào (Desktop): Tự động tính toán chống tràn màn hình
+            li.addEventListener("mouseenter", () => {
+                checkOverflow(li);
+            });
+
+            // Click/Chạm: Dùng cho Mobile hoặc khi người dùng bấm vào mục cha
+            const link = li.querySelector(":scope > a");
             link.addEventListener("click", (e) => {
-                const dropdown = li.querySelector(".dropdown, .submenu");
+                const dropdown = li.querySelector(":scope > .dropdown, :scope > .submenu");
                 if (dropdown) {
-                    // Nếu trên màn hình nhỏ hoặc click để mở
-                    if (window.innerWidth <= 992 || li.classList.contains("has-dropdown") || li.classList.contains("has-submenu")) {
-                        e.preventDefault();
-                        // Đóng các mục ngang hàng khác
+                    e.preventDefault();
+                    // Chỉ toggle class trên mobile (trên PC đã có CSS :hover lo)
+                    if (window.innerWidth <= 992) {
                         const siblings = li.parentElement.children;
                         for (let sib of siblings) {
                             if (sib !== li) {
@@ -173,8 +188,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     return;
                 }
 
-                const filtered = allSearchableItems.filter(item => 
-                    item.name.toLowerCase().includes(keyword) || 
+                const filtered = allSearchableItems.filter(item =>
+                    item.name.toLowerCase().includes(keyword) ||
                     item.title.toLowerCase().includes(keyword) ||
                     item.category.toLowerCase().includes(keyword)
                 );
@@ -200,7 +215,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
-            // Ẩn kết quả tìm kiếm khi click ra ngoài
             document.addEventListener("click", (e) => {
                 if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
                     searchResults.classList.remove("active");
