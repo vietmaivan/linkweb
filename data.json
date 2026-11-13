@@ -135,7 +135,7 @@
             { "name": "ĐỌC TÊN NGUYÊN TỐ", "link": "https://www.youtube.com/watch?v=solc6MqNQKo", "title": "VIẾT VÀ ĐỌC TÊN CÁC NGUYÊN TỐ HOÁ HỌC VÀ HỢP CHẤT BẰNG TIẾNG ANH - THẦY CAO CỰ GIÁC" },
             { "name": "CHẤT CHỈ THỊ MÀU", "link": "https://www.youtube.com/watch?v=O9RgI-qgjhM", "title": "Làm chất chỉ thị pH từ Bắp Cải Tím | Mr. Skeleton Thí Nghiệm" },
             { "name": "HOA ĐẬU BIẾC", "link": "https://www.youtube.com/watch?v=9heZ9nRsFpU", "title": "Thí Nghiệm với HOA ĐẬU BIẾC" },
-            { "name": "TERABOX-LƯU DỮ LIỆU", "link": "https://www.terabox.com/vietnamese/main?category=all&path=%2F", "title": "password: M@IVi@t76 user: taekwondonamviet@gmail.com" },
+            { "name": "TERABOX-LƯU DỮ LIỆU", "link": "https://www.terabox.com/vietnamese/main?category=all&path=%2F", "title": "password: user: taekwondonamviet@gmail.com" },
             { "name": "CÁP ĐIỆN VIỆT NAM", "link": "https://cadivi.vn/vn/", "title": "" }
           ]
         },
@@ -143,8 +143,8 @@
           "title": "BÁO ĐIỆN TỬ 9",
           "items": [
             { "name": "CANVA", "link": "https://www.canva.com/vi_vn/giao-duc/", "title": "mvviet@dayhoc.edu.vn" },
-            { "name": "BÌNH YÊN SAU ĐẠI DỊCH", "link": "https://go.fliplink.me/view/BinhYenSauDaiDichFull", "title": "password: tapthogiamloau" },
-            { "name": "SÁCH ĐIỆN TỬ", "link": "https://go.fliplink.me", "title": "user: taekwondonamviet@gmail.com      password: M@iVIET_23" },
+            { "name": "BÌNH YÊN SAU ĐẠI DỊCH", "link": "https://go.fliplink.me/view/BinhYenSauDaiDichFull", "title": "password:" },
+            { "name": "SÁCH ĐIỆN TỬ", "link": "https://go.fliplink.me", "title": "user:      password:" },
             { "name": "MAI VAN VIET", "link": "https://www.youtube.com/@maivviet/videos", "title": "" },
             { "name": "LƯU VIDEO YOUTUBE", "link": "https://vi.savefrom.net/", "title": "" },
             { "name": "TẠO GIỌNG NÓI", "link": "https://elevenlabs.io/", "title": "Tạo giọng nói của bạn với AI" },
@@ -218,7 +218,7 @@
             { "name": "KODULAR.IO", "link": "https://creator.kodular.io", "title": "email: taekwondonamviet" },
             { "name": "Lập trình MIT", "link": "http://ai2.appinventor.mit.edu", "title": "Lập trình drag and drop MIT" },
             { "name": "THUNKABLE.COM", "link": "https://x.thunkable.com/login", "title": "Lập trình THUNKABLE.COM (Android OS and iOS)" },
-            { "name": "Lập trình Scratch", "link": "https://scratch.mit.edu", "title": "USER: maivanviet pass: 123456789" },
+            { "name": "Lập trình Scratch", "link": "https://scratch.mit.edu", "title": "USER: maivanviet pass: " },
             { "name": "VÒNG QUAY", "link": "https://wheelofnames.com/", "title": "VÒNG QUAY" },
             { "name": "WEB VIEW (LOCAL)", "link": "https://www.youtube.com/watch?v=UTbXeBNIAwI", "title": "Load Local HTML Files Into WebView" },
             { "name": "WEB VIEW (ANDROID)", "link": "https://www.youtube.com/watch?v=IM76XDsSt4E", "title": "Webview in Android Studio" },
