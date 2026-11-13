@@ -90,11 +90,12 @@ nav {
     color: #34d399;
 }
 
-/* --- MENU CẤP 2 & CẤP 3 (CỐ ĐỊNH ĐỈNH & TRƯỢT MƯỢT) --- */
-.dropdown,
-.submenu {
+/* --- MENU CẤP 2 & CẤP 3 CỐ ĐỊNH --- */
+.dropdown {
     list-style: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: var(--secondary-dark);
     min-width: 255px;
     border-radius: 8px;
@@ -102,37 +103,43 @@ nav {
     box-shadow: var(--shadow-soft);
     border: 1px solid rgba(255, 255, 255, 0.08);
     
-    /* Ẩn mặc định bằng opacity & transform để có animation mượt */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
-}
-
-.dropdown {
-    top: 100%;
-    left: 0;
     transform: translateY(10px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
     z-index: 100;
 }
 
-/* Đặt static để menu cấp 3 luôn neo cố định theo đỉnh của menu cấp 2 */
+/* Đặt static trên li cấp 2 để submenu cấp 3 bám cố định vào khung .dropdown */
 .dropdown li {
     position: static;
 }
 
-/* Menu cấp 3 luôn cố định ở đỉnh trên cùng (top: -1px) song song với menu cấp 2 */
+/* Menu cấp 3 (Submenu) cố định ngang bằng đỉnh trên cùng của khung dropdown cấp 2 */
 .dropdown .submenu {
+    list-style: none;
+    position: absolute;
     top: -1px;
     left: 100%;
-    margin-left: 3px;
-    transform: translateX(10px);
-    z-index: 101;
-    max-height: calc(100vh - 75px); /* Không bao giờ vượt quá chiều cao màn hình */
+    margin-left: 4px;
+    background-color: var(--secondary-dark);
+    min-width: 270px;
+    border-radius: 8px;
+    padding: 6px 0;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    max-height: calc(100vh - 80px);
     overflow-y: auto;
+    z-index: 101;
+    transition: opacity 0.2s ease;
 }
 
-/* Cầu nối tàng hình giúp rê chuột chéo từ dưới lên menu con không bị mất hover */
+/* Cầu nối tàng hình giúp rê chuột chéo từ dòng dưới lên menu con không bị mất hover */
 .dropdown .submenu::before {
     content: "";
     position: absolute;
@@ -143,18 +150,21 @@ nav {
     background: transparent;
 }
 
-/* Khi menu cấp 3 bị tràn màn hình phải -> Lật sang trái */
-.dropdown .submenu.align-left {
-    left: auto;
-    right: 100%;
-    margin-left: 0;
-    margin-right: 3px;
-    transform: translateX(-10px);
+/* Khi kích hoạt hiển thị submenu cố định */
+.dropdown .submenu.show-sub,
+.dropdown .submenu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
-.dropdown .submenu.align-left::before {
-    left: auto;
-    right: -10px;
+/* Giữ sáng mục cha cấp 2 khi đang thao tác trên submenu */
+.has-submenu-parent.active-sub > a,
+.has-submenu.active-sub > a {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding-left: 23px;
+    border-left-color: #fff;
 }
 
 /* Thanh cuộn tinh gọn cho submenu dài */
@@ -166,9 +176,8 @@ nav {
     border-radius: 10px;
 }
 
-/* Trạng thái hiển thị mở (Desktop Hover & Mobile Click) */
-.dropdown.show,
-.submenu.show {
+/* Trạng thái hiển thị menu cấp 2 */
+.dropdown.show {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -180,10 +189,12 @@ nav {
     font-size: 13px;
     font-weight: 500;
     border-left: 3px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.dropdown li a:hover,
-.dropdown li.has-submenu:hover > a {
+.dropdown li a:hover {
     background-color: var(--accent-color);
     color: #fff;
     padding-left: 23px;
@@ -201,14 +212,16 @@ nav {
     transform: rotate(180deg);
 }
 
-.has-submenu.open > a .arrow {
+.has-submenu.open > a .arrow,
+.has-submenu-parent.open > a .arrow {
     transform: rotate(90deg);
 }
 
 /* --- TỰ ĐỘNG HIỆN MENU KHI RÊ CHUỘT TRÊN MÁY TÍNH (DESKTOP) --- */
 @media (min-width: 993px) {
     .nav-list li.has-dropdown:hover > .dropdown,
-    .nav-list li.has-submenu:hover > .submenu {
+    .nav-list li.has-submenu:hover > .submenu,
+    .nav-list li.has-submenu-parent:hover > .submenu {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -220,19 +233,35 @@ nav {
         transform: rotate(180deg);
     }
     /* Xoay mũi tên khi hover cấp 2 (bung phải) */
-    .nav-list li.has-submenu:hover > a .arrow {
+    .nav-list li.has-submenu:hover > a .arrow,
+    .nav-list li.has-submenu-parent:hover > a .arrow {
         transform: rotate(90deg);
     }
     /* Xoay ngược mũi tên cấp 2 khi lật sang trái */
-    .has-submenu.flip-arrow:hover > a .arrow {
+    .has-submenu.flip-arrow:hover > a .arrow,
+    .has-submenu-parent.flip-arrow:hover > a .arrow {
         transform: rotate(-90deg) !important;
     }
 }
 
-/* --- XỬ LÝ TRÀN MÀN HÌNH BÊN PHẢI CHO MENU CẤP 2 --- */
+/* --- XỬ LÝ TRÀN MÀN HÌNH BÊN PHẢI -> TỰ ĐỘNG LẬT SANG TRÁI --- */
 .dropdown.align-left {
     left: auto;
     right: 0;
+}
+
+.dropdown.align-left .submenu,
+.dropdown .submenu.align-left {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 4px;
+}
+
+.dropdown.align-left .submenu::before,
+.dropdown .submenu.align-left::before {
+    left: auto;
+    right: -10px;
 }
 
 /* --- THANH TÌM KIẾM NHANH --- */
@@ -412,18 +441,19 @@ nav {
     .nav-list {
         flex-direction: column;
     }
-    .dropdown, .submenu {
+    .dropdown, .dropdown .submenu {
         position: static;
         opacity: 1;
         visibility: visible;
         display: none;
         transform: none;
         max-height: none;
+        margin: 0;
     }
     .dropdown .submenu::before {
         display: none;
     }
-    .dropdown.show, .submenu.show {
+    .dropdown.show, .dropdown .submenu.show {
         display: block;
     }
 }

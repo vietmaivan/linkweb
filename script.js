@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Lỗi khi tải dữ liệu:", error));
 
     // 1. Render Menu đa cấp
-    function renderMenu(menuData, parentElement) {
+        function renderMenu(menuData, parentElement) {
         parentElement.innerHTML = "";
 
         menuData.forEach(menuItem => {
@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 menuItem.submenus.forEach(submenu => {
                     const subLi = document.createElement("li");
+                    subLi.className = "has-submenu-parent";
                     const subA = document.createElement("a");
                     subA.href = "#";
                     subA.innerHTML = `${submenu.title} ${submenu.items ? '<span class="arrow">&#9656;</span>' : ''}`;
                     subLi.appendChild(subA);
 
                     if (submenu.items && submenu.items.length > 0) {
-                        subLi.classList.add("has-submenu");
                         const ulSubmenu = document.createElement("ul");
                         ulSubmenu.className = "submenu";
 
@@ -66,7 +66,17 @@ document.addEventListener("DOMContentLoaded", () => {
                             ulSubmenu.appendChild(itemLi);
                         });
 
+                        // Gắn trực tiếp submenu vào dropdown chính thay vì từng li nhỏ
                         subLi.appendChild(ulSubmenu);
+                        
+                        // Sự kiện hover để hiển thị đúng submenu của mục đó tại vị trí cố định
+                        subLi.addEventListener("mouseenter", () => {
+                            ulDropdown.querySelectorAll(".submenu").forEach(sub => sub.classList.remove("show-sub"));
+                            ulSubmenu.classList.add("show-sub");
+                            
+                            subLi.parentElement.querySelectorAll(".has-submenu-parent").forEach(s => s.classList.remove("active-sub"));
+                            subLi.classList.add("active-sub");
+                        });
                     }
                     ulDropdown.appendChild(subLi);
                 });
