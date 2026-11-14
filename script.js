@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Lỗi khi tải dữ liệu:", error));
 
     // 1. Render Menu đa cấp
-        function renderMenu(menuData, parentElement) {
+    function renderMenu(menuData, parentElement) {
         parentElement.innerHTML = "";
 
         menuData.forEach(menuItem => {
@@ -164,29 +164,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const allLiItems = navList.querySelectorAll("li");
         allLiItems.forEach(li => {
-            // Rê chuột vào (Desktop): Tự động tính toán chống tràn màn hình mượt mà
+            // Rê chuột vào (Desktop) để tính toán chống tràn màn hình mượt mà
             li.addEventListener("mouseenter", () => {
                 checkOverflow(li);
             });
 
-            // Click/Chạm: Dành cho Mobile hoặc khi bấm trực tiếp vào mục cha
+            // Sự kiện Click/Chạm cho các mục menu cấp 1, 2, 3
             const link = li.querySelector(":scope > a");
             if (link) {
                 link.addEventListener("click", (e) => {
                     const dropdown = li.querySelector(":scope > .dropdown, :scope > .submenu");
-                    if (dropdown && window.innerWidth <= 992) {
-                        e.preventDefault();
-                        const siblings = li.parentElement.children;
-                        for (let sib of siblings) {
-                            if (sib !== li) {
-                                sib.classList.remove("open");
-                                const sub = sib.querySelector(".dropdown, .submenu");
-                                if (sub) sub.classList.remove("show");
+                    
+                    if (dropdown) {
+                        e.preventDefault(); // Ngăn chuyển trang nếu mục đó chứa menu con
+                        e.stopPropagation();
+
+                        // Nếu là menu cấp 1
+                        if (li.parentElement === navList) {
+                            const siblings = navList.children;
+                            for (let sib of siblings) {
+                                if (sib !== li) {
+                                    sib.classList.remove("open");
+                                    const sub = sib.querySelector(":scope > .dropdown");
+                                    if (sub) sub.classList.remove("show");
+                                }
                             }
                         }
+
+                        // Chuyển đổi trạng thái đóng/mở của menu hiện tại
                         li.classList.toggle("open");
                         dropdown.classList.toggle("show");
                     }
+                });
+            }
+        });
+
+        // Click ra ngoài thanh menu thì tự động đóng menu cấp 1 đang mở
+        document.addEventListener("click", (e) => {
+            if (!mainNav.contains(e.target)) {
+                const openMenus = navList.querySelectorAll(".has-dropdown.open");
+                openMenus.forEach(li => {
+                    li.classList.remove("open");
+                    const dropdown = li.querySelector(":scope > .dropdown");
+                    if (dropdown) dropdown.classList.remove("show");
                 });
             }
         });

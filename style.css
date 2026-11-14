@@ -158,7 +158,7 @@ nav {
     pointer-events: auto;
 }
 
-/* Giữ sáng mục cha cấp 2 khi đang thao tác trên submenu */
+/* Giữ sáng mục cấp 2 khi đang thao tác trên submenu */
 .has-submenu-parent.active-sub > a,
 .has-submenu.active-sub > a {
     background-color: var(--accent-color);
@@ -176,7 +176,7 @@ nav {
     border-radius: 10px;
 }
 
-/* Trạng thái hiển thị menu cấp 2 */
+/* Trạng thái hiển thị menu cấp 2 khi mở bằng class .show (Click) */
 .dropdown.show {
     opacity: 1;
     visibility: visible;
@@ -217,9 +217,9 @@ nav {
     transform: rotate(90deg);
 }
 
-/* --- TỰ ĐỘNG HIỆN MENU KHI RÊ CHUỘT TRÊN MÁY TÍNH (DESKTOP) --- */
+/* --- HIỆN MENU CẤP 2 & CẤP 3 KHI RÊ CHUỘT TRÊN MÁY TÍNH (DESKTOP) --- */
 @media (min-width: 993px) {
-    .nav-list li.has-dropdown:hover > .dropdown,
+    /* Đã bỏ hover ở cấp 1, chỉ giữ lại cho cấp 2 & cấp 3 bên trong */
     .nav-list li.has-submenu:hover > .submenu,
     .nav-list li.has-submenu-parent:hover > .submenu {
         opacity: 1;
@@ -228,10 +228,6 @@ nav {
         transform: translate(0, 0);
     }
 
-    /* Xoay mũi tên khi hover cấp 1 */
-    .nav-list li.has-dropdown:hover > a .arrow {
-        transform: rotate(180deg);
-    }
     /* Xoay mũi tên khi hover cấp 2 (bung phải) */
     .nav-list li.has-submenu:hover > a .arrow,
     .nav-list li.has-submenu-parent:hover > a .arrow {
